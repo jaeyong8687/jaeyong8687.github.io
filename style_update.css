@@ -70,7 +70,6 @@
   grid-column: 9/13;
 }
 
-
 /*Responsive layout*/
 @media only screen and (max-width: 840px) {
   .grid-container {
@@ -154,13 +153,12 @@
 
 @media only screen and (min-width: 479px) {
   }
-}
 /* 0.2 Styling preset */
 /* 0.2.1 Typography */
 h1,h2,h3,h4,h5 {
  font-family: "Montserrat", sans-serif;
  margin: 0px;
- margin-top: 0px !important;
+ margin-top: 0px;
 }
 a {
   text-decoration: none;
@@ -173,7 +171,7 @@ a:hover {
 a[href^="mailto:"],
 a[href^="tel:"] {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   font-style: normal;
   margin: 0px;
@@ -192,6 +190,7 @@ p.post-contents {
 }
 b {
   font-weight: 600 !important;
+  color:#000000;
 }
 .bold {
   font-weight: 800 !important;
@@ -218,7 +217,7 @@ b {
 .post-heading_2 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0 0 20px 0;
   color: #303034;
@@ -234,7 +233,7 @@ b {
 }
 .post-sub-heading_2 {
   font-family: "Montserrat", times, serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   color: #303034;
   margin: 0;
@@ -242,21 +241,21 @@ b {
 }
 .post-sub-heading_3 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   color: #303034;
   margin:0;
 }
 .post-sub-heading_4 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #303034;
   margin:0;
 }
 .post-sub-heading-link {
   font-family: "Montserrat", times, serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   color: #8A8A8D;
   margin: 0;
@@ -267,7 +266,7 @@ b {
   font-family: "Montserrat", sans-serif;
   color: #636367;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
   line-height: 1.4;
@@ -277,7 +276,7 @@ b {
   font-family: "Montserrat", sans-serif;
   color: #D8D8D9;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
 }
@@ -286,7 +285,7 @@ b {
   font-family: "Montserrat", sans-serif;
   color: #1432FF;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   margin: 0;
 }
@@ -295,7 +294,7 @@ b {
   color: #666666;
   text-decoration: underline;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   margin: 0px;
 }
@@ -304,7 +303,7 @@ b {
   font-family: 'Sanchez', serif;
   text-decoration: none;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   margin: 0px;
   color: #636367;
@@ -377,7 +376,7 @@ b {
   color: #3C3C41;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   text-decoration: none;
   height: 32px;
@@ -470,7 +469,7 @@ header.smaller {
 }
 .brand {
   display: inline-block;
-  float:left;
+  float: left;
   vertical-align: middle;
   text-align: center;
   margin: 0;
@@ -577,13 +576,6 @@ nav > ul {
   height: 50px;
   width: 100%;
   display: none;
-}
-#interactCityPage .masthead-nav > li > a {
-  color: #ffffff;
-}
-#interactCityPage .masthead-nav > li > a > span.current {
-  color: #ffffff;
-  border-bottom: solid #ffffff;
 }
 
 /* 0.4.3 Fullscreen menu */
@@ -1887,7 +1879,7 @@ input[type=text]:focus, select, textarea {
 }
 
 .head-texts {
-  width: 100%
+  width: 100%;
   height: 600px;
   position: absolute;
   text-align: center;
@@ -1925,11 +1917,12 @@ input[type=text]:focus, select, textarea {
   padding:0 !important;
 }
 .body-contents-right {
+  position: relative;
   top:100px;
   width: 25%;
   right:0;
   display: inline-block;
-  float:right;
+  float: right;
   padding: 0 !important
 }
 
@@ -2052,7 +2045,6 @@ ul.nav-tabs li.active a:hover {
 .body-contents-left h3
 .body-contents-left h4 {
   width: 100%;
-}
 }
 .body-contents-left > div {
   margin-bottom: 50px;
@@ -2394,4 +2386,3 @@ img.demo {
 @media only screen and (min-width: 768px) {
   .quoteWrapper {margin: 60px 0;}
   }
-}
