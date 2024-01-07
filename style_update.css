@@ -1115,7 +1115,7 @@ a h5.post-contents:hover {text-decoration: underline;
   }
   .videoWrapper {margin: 10px 0;
   }
-  .grid-container {
+  #firstCard {
     margin-top: 80px;
   }
 }
@@ -1879,7 +1879,10 @@ input[type=text]:focus, select, textarea {
 }
 
 .head-texts {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
   height: 600px;
   position: absolute;
   text-align: center;
@@ -1917,8 +1920,7 @@ input[type=text]:focus, select, textarea {
   padding:0 !important;
 }
 .body-contents-right {
-  position: relative;
-  top:100px;
+    top:100px;
   width: 25%;
   right:0;
   display: inline-block;
