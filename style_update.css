@@ -190,7 +190,9 @@ p {
 p.post-contents {
   margin-bottom: 56px;
 }
-
+b {
+  font-weight: 600 !important;
+}
 .bold {
   font-weight: 800 !important;
 }
@@ -576,6 +578,14 @@ nav > ul {
   width: 100%;
   display: none;
 }
+#interactCityPage .masthead-nav > li > a {
+  color: #ffffff;
+}
+#interactCityPage .masthead-nav > li > a > span.current {
+  color: #ffffff;
+  border-bottom: solid #ffffff;
+}
+
 /* 0.4.3 Fullscreen menu */
 .overlay,
 .overlay-w {
@@ -1112,6 +1122,9 @@ a h5.post-contents:hover {text-decoration: underline;
   .tag-button-#303034 {margin-left: -10px;
   }
   .videoWrapper {margin: 10px 0;
+  }
+  .grid-container {
+    margin-top: 80px;
   }
 }
 /* For tablets */
