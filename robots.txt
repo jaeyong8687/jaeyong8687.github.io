@@ -1,0 +1,9 @@
+# Robots.txt for jaeyong8687.github.io
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jaeyong8687.github.io/sitemap.xml
+
+# Disallow crawling of any password-protected pages
+Disallow: /passwordValidation_interactCity.html

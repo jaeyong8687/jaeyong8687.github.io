@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 - Page Not Found | Jaeyong Lee</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Return to Jaeyong Lee's portfolio homepage.">
+    <link rel="shortcut icon" href="favicon.gif" type="image/gif">
+    <link rel="stylesheet" href="style_update.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800" rel='stylesheet' type='text/css'>
+    <style>
+      .error-container {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+      }
+      .error-content {
+        max-width: 600px;
+      }
+      .error-code {
+        font-size: 120px;
+        font-weight: 800;
+        line-height: 1;
+        margin-bottom: 20px;
+        color: #333;
+      }
+      .error-message {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #666;
+      }
+      .error-description {
+        font-size: 16px;
+        margin-bottom: 40px;
+        color: #999;
+      }
+      .error-button {
+        display: inline-block;
+        padding: 15px 40px;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      .error-button:hover {
+        background-color: #555;
+      }
+      @media only screen and (max-width: 768px) {
+        .error-code {
+          font-size: 80px;
+        }
+        .error-message {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-container">
+      <div class="error-content">
+        <div class="error-code">404</div>
+        <h1 class="error-message">Page Not Found</h1>
+        <p class="error-description">
+          Sorry, the page you're looking for doesn't exist or has been moved.
+          <br>Let's get you back on track.
+        </p>
+        <a href="index.html" class="error-button">Return to Homepage</a>
+      </div>
+    </div>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77270924-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-77270924-1');
+    </script>
+  </body>
+</html>
