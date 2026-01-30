@@ -2443,3 +2443,10 @@ img.demo {
 @media only screen and (min-width: 768px) {
   .quoteWrapper {margin: 60px 0;}
   }
+
+/* Mobile Navigation Fix - Added 2026-01-30 */
+@media only screen and (max-width: 768px) {
+  .menu-desktop {
+    display: none !important;
+  }
+}
