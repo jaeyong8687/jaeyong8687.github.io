@@ -31,7 +31,7 @@
     <meta property="twitter:description" content="Portfolio showcasing UX/UI design work in healthcare, smart cities, and connected systems.">
     <meta property="twitter:image" content="https://jaeyong8687.github.io/imgs/works/iaCity_banner.png">
     <!--normalize-->
-    <link rel="normalize" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.gif" type="image/gif">
     
@@ -69,13 +69,9 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800" rel='stylesheet' type="text/css">
-    <!--slider-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css">
+    <!--slider - using single minified version-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
     <!--icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -87,13 +83,13 @@
           <header id="navbar">
             <div class="masthead">
               <div class="masthead-center">
-                <a href="index.html"><div class="brand" id="logo"></div></a>
+                <a href="index.html" aria-label="Home"><div class="brand" id="logo"></div></a>
                 <div class="menu-desktop">
-                  <nav>
+                  <nav aria-label="Main navigation">
                     <ul class="masthead-nav">
                       <li><a href="index.html"><span class="current">Work</span></a></li>
                       <li><a href="about.html">About</a></li>
-                      <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                      <li><button type="button" class="icon" onclick="myFunction()" aria-label="Toggle mobile menu" aria-expanded="false">&#9776;</button>
                     </ul>
                   </nav>
                 </div>
@@ -101,7 +97,7 @@
             </div>
           </header>
 
-          <div class="all-contents">
+          <main class="all-contents" role="main">
             <div class="animation">
               <div class="animation-contents">
                 <h2 class="post-heading" id="headerAnimation"><span class="ityped"></span></h2>
@@ -351,18 +347,19 @@
               </div>
             </div>
 
-            <div class="mastfoot">
+            <footer class="mastfoot">
               <div class="mastfoot-contents">
                 <div class="mastfoot-information">
                 <h3 class="post-sub-heading_1 white">Jaeyong Lee.</h3>
                   <span class="post-contents_2">Senior Design Manager at Microsoft</span><br>
-                  <div class="socialnetwork">
-                  <a href="mailto:jaeyonglee05@gmail.com"><i class="fa fa-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/jaeyonglee05/" class="fa fa-linkedin" target="_blank"></a>
-                </div>
+                  <nav class="socialnetwork" aria-label="Social media links">
+                  <a href="mailto:jaeyonglee05@gmail.com" aria-label="Email Jaeyong Lee"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/jaeyonglee05/" aria-label="LinkedIn profile" target="_blank" rel="noopener"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </nav>
               </div>
             </div>
-          </div>
+          </footer>
+          </main>
         </div>
       </div>
     </div>
@@ -459,6 +456,17 @@
           document.getElementById("navbar").style.top = "-65px";
         }
         prevScrollpos = currentScrollPos;
+      }
+    </script>
+    <!--Mobile hamburger menu toggle-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "masthead-nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "masthead-nav";
+        }
       }
     </script>
   </body>

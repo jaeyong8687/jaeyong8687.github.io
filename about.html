@@ -15,7 +15,7 @@
     <title>About - Jaeyong Lee | Senior Design Manager</title>
     <meta name="description" content="Learn about Jaeyong Lee's background, experience, and design philosophy. Senior Design Manager at Microsoft with expertise in healthcare UX and smart city design.">
     <!--normalize-->
-    <link rel="normalize" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.gif" type="image/gif">
     <!--stlying-->
@@ -265,6 +265,17 @@ s
           document.getElementById("navbar").style.top = "-65px";
         }
         prevScrollpos = currentScrollPos;
+      }
+    </script>
+      <!--Mobile hamburger menu toggle-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "masthead-nav") {
+          x.className += " responsive";
+        } else {
+          x.className = "masthead-nav";
+        }
       }
     </script>
   </body>
